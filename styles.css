@@ -244,23 +244,6 @@ body {
     background-color: #9f08d5;
     border-radius: 50%;
 }
-@media (max-width: 768px) {
-    #experience h2 {
-        font-size:2rem;
-    }
-    
-    #experience h3 {
-        font-size: 1rem;
-    }
-    
-    #experience h6 {
-        font-size: 0.85rem;
-    }
-    
-    #experience ul li {
-        font-size: 0.8rem;
-    }
-}
 /* Example CSS for Education Section */
 #education {
     padding: 60px 0;
@@ -296,11 +279,35 @@ body {
     color: #777;
 }
 
-@media (max-width: 768px) {
+/* Media Queries */
+@media (max-width: 767px) {
+    .experience-section h2,
+    #education h2{
+        padding: 2px;
+        margin-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    .experience-section h3,
     #education h3 {
-        font-size: 1.5rem;
+        font-size: 1em;
+    }
+
+    .experience-section ul,
+    #education ul {
+        padding-left: 2px;
+    }
+
+    .experience-section ul li,
+    #education ul li {
+        font-size: 0.9em;
+    }
+
+    .experience-section ul li{
+        font-size: 0.6rem;
     }
 }
+
 
 /*Project section*/
 .project-card {
