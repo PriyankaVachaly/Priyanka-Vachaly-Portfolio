@@ -1,0 +1,443 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #c784f4;
+    margin-top: 70px; /* Adjust for fixed navbar height */
+   
+    background-image: url('background-image.png');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* No repeating of the background image */
+        
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #343a40;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #9d23cd; /* Your chosen background color */
+    box-shadow: 0 2px 4px rgba(166, 116, 195, 0.1);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar-brand {
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #460255;
+    
+}
+
+.navbar-brand:hover {
+    color: #8003aa; /* Change color on hover */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* White with opacity for toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for toggler icon */
+}
+
+.navbar-nav .nav-link {
+    
+    color: #460255;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f7f6f8; /* Change color on hover */
+}
+
+/* Adjust content padding to account for fixed navbar */
+body {
+    padding-top: 70px; /* Adjust for fixed navbar height */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+/* Section Anchors (For smooth scrolling) */
+.section {
+    scroll-margin-top: 70px; /* Adjust to match navbar height */
+}
+
+/* Adjust content padding to account for fixed navbar */
+body {
+    padding-top: 70px; /* Adjust for fixed navbar height */
+}
+
+/* Section Anchors (For smooth scrolling) */
+.section {
+    scroll-margin-top: 70px; /* Adjust to match navbar height */
+}
+
+/* Home Section */
+.home-section {
+    background: url('bimage.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+.home-section .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.home-section h1 {
+    font-size: 5.5rem;
+    font-family: cursive;
+    margin-bottom: 20px;
+    color: #f2f0f3;
+}
+
+.home-section p {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(66, 1, 92);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #460255;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555555;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #efdcf8;
+    padding: 50px 0;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #460255;
+    
+}
+
+.skills-section .skill {
+    margin-bottom: 15px;
+}
+
+.skills-section .progress {
+    height: 25px;
+    background-color: #fbfcfe;
+    border-radius: 5px;
+}
+
+.skills-section .progress-bar {
+    background-color: #a21ed2;
+    border-radius: 5px;
+}
+
+/* Experience Section */
+.experience-section {
+    background-color: #fff;
+    padding: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(-45deg, #e29cf3, #fbfdfd);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.experience-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #460255;
+}
+
+.experience-section h5{
+    color: #f6f2f2;
+
+}
+
+.experience-section .experience {
+    margin-bottom: 30px;
+}
+
+.experience-section ul {
+    list-style-type: none;
+    
+}
+
+.experience-section ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+
+
+.experience-section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: #9f08d5;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    #experience h2 {
+        font-size:2rem;
+    }
+    
+    #experience h3 {
+        font-size: 1rem;
+    }
+    
+    #experience h6 {
+        font-size: 0.85rem;
+    }
+    
+    #experience ul li {
+        font-size: 0.8rem;
+    }
+}
+/* Example CSS for Education Section */
+#education {
+    padding: 60px 0;
+}
+
+#education h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+#education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #460255;
+    
+}
+
+
+#education p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#education ul {
+    margin-top: 10px;
+}
+
+#education ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    #education h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/*Project section*/
+.project-card {
+    border: 1px solid #d46eeb;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+    color: #9f08d5;
+}
+.color1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #460255;
+
+    
+
+    
+}
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-card .card-body {
+    padding: 15px;
+    color: #9f08d5;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Certifications Section */
+.certifications-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.certifications-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #460255;
+   
+}
+
+.certifications-section ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.certifications-section ul li {
+    margin-bottom: 10px;
+}
+.certifications-section ul li a {
+    margin-bottom: 10px;
+    color: #c784f4;
+}
+
+/* Activities Section */
+.activities-section {
+    background-color: #f8ccfa;
+    padding: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.activities-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #460255;
+}
+
+.activities-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #9f08d5;
+}
+
+.activities-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #d9d4db;
+    padding: 50px 0;
+    color: #460255;
+    text-align: center;
+
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align:bottom;
+    color: #460255;
+
+    
+}
+
+
+/*Footer*/
+footer {
+    background-color: #daabf2;
+    padding: 20px 0;
+    text-align: center;
+    color: #26013c;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info, .social-media {
+    margin-bottom: 10px;
+  }
+  .contact-info h4, .social-media h4 {
+    margin-bottom: 5px;
+    color: #360254;
+  }
+  .contact-info p, .social-media a {
+    margin: 0;
+  }
+  .social-media a {
+    margin: 0 5px;
+    color: #350249;
+    font-size: 20px;
+  }
+  .social-media a:hover {
+    color: #f6f8fa;
+  }
+  .copyright {
+    border-top: 1px solid #dee2e6;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
